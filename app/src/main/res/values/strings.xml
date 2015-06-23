@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">That1card</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_catalogue">Catalogue</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_plain__cat">Plain_Cat</string>
+    <string name="title_activity_plain__pro">Plain_Pro</string>
+    <string name="title_activity_activity_c_cat">Categories</string>
+    <string name="title_activity_activity_c_productlist">ProductList</string>
+    <string name="title_activity_activity_c_wishcart">Cart</string>
+    <string name="title_activity_activity_c_wishlist">Wishlist</string>
+    <string name="title_activity_activity_c_productinfo">Product Info</string>
+    <string name="title_activity_activity_c_cat2">Categories</string>
+    <string name="title_activity_activity_c_user">Login</string>
+    <string name="title_activity_activity_c_user2">Dashboard</string>
+    <string name="title_activity_acticity_register">Register</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="title_activity_activity_c_blog">Blog</string>
+    <string name="facebook_app_id">1636420973243522</string>
+
+</resources>

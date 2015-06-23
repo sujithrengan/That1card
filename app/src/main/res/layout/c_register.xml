@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50676767"
+    android:layout_weight="100"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/lyt_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:padding="10dp"
+        android:background="#fff9f9f9"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+        <EditText
+
+            android:layout_width="fill_parent"
+            android:nextFocusForward="@+id/txt_lastname"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:singleLine="true"
+            android:textColorHint="#50676767"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/txt_firstname" />
+        <EditText
+
+            android:layout_width="fill_parent"
+            android:nextFocusForward="@+id/txt_password"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:singleLine="true"
+            android:textColorHint="#50676767"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/txt_lastname" />
+        <EditText
+
+            android:layout_width="fill_parent"
+            android:nextFocusForward="@+id/txt_password"
+            android:layout_height="wrap_content"
+            android:hint="Email ID"
+            android:singleLine="true"
+            android:textColorHint="#50676767"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/txt_emailid" />
+
+
+        <!--<EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginTop="25dp"
+            android:nextFocusForward="@+id/txt_cpassword"
+            android:layout_marginBottom="5dp"
+            android:singleLine="true"
+            android:textColorHint="#50676767"
+            android:hint="Password"
+            android:id="@+id/txt_password" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginBottom="5dp"
+            android:singleLine="true"
+            android:textColorHint="#50676767"
+            android:hint="Confirm Password"
+            android:id="@+id/txt_cpassword" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_btn"
+            android:text="Register"
+            android:id="@+id/btn_register" />
+            !-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/lyt_re"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="#fff9f9f9"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lyt_login"
+            >
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+
+            android:nextFocusForward="@+id/txt_cpassword"
+            android:layout_marginBottom="5dp"
+            android:singleLine="true"
+            android:textColorHint="#50676767"
+            android:hint="Password"
+            android:id="@+id/txt_password" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginBottom="5dp"
+            android:singleLine="true"
+            android:textColorHint="#50676767"
+            android:hint="Confirm Password"
+            android:id="@+id/txt_cpassword" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_btn"
+            android:text="Register"
+            android:id="@+id/btn_register" />
+            </LinearLayout>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/lyt_re"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thehp.that1card" >
+
+    <uses-sdk android:minSdkVersion="11" />
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--
+ To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" /> <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Catalogue"
+            android:label="@string/title_activity_catalogue" >
+        </activity>
+        <activity
+            android:name=".Plain_Cat"
+            android:label="@string/title_activity_plain__cat" >
+        </activity>
+        <activity
+            android:name=".Plain_Pro"
+            android:label="@string/title_activity_plain__pro"
+            android:parentActivityName=".activity_c_productlist" >
+        </activity>
+        <activity
+            android:name=".activity_c_cat"
+            android:label="@string/title_activity_activity_c_cat"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".activity_c_wishlist"
+            android:label="@string/title_activity_activity_c_wishlist" >
+        </activity>
+        <activity
+            android:name=".activity_c_productlist"
+            android:label="@string/title_activity_activity_c_productlist"
+            android:parentActivityName=".activity_c_cat" >
+        </activity>
+        <activity
+            android:name=".activity_c_productinfo"
+            android:label="@string/title_activity_activity_c_productinfo" >
+        </activity>
+        <activity
+            android:name=".activity_c_cat2"
+            android:label="@string/title_activity_activity_c_cat2" >
+        </activity>
+        <activity
+            android:name=".activity_c_user"
+            android:label="@string/title_activity_activity_c_user" >
+        </activity>
+        <activity
+            android:name=".activity_c_user2"
+            android:label="@string/title_activity_activity_c_user2" >
+        </activity>
+        <activity
+            android:name=".acticity_c_register"
+            android:label="@string/title_activity_acticity_register" >
+        </activity>
+        <activity
+            android:name=".YoutubeDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".activity_c_blog"
+            android:label="@string/title_activity_activity_c_blog" >
+
+        </activity>
+    </application>
+
+</manifest>
